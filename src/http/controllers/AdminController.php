@@ -10,15 +10,23 @@ class AdminController extends Controller
 {
      public function index()
     {
-        $admin=new Admin;
-        $admin->name=config('admin.name');
-        $admin->permission_level=config('admin.permission_level');
-        if($admin->save())
-        {
-        	return "success";
-        }
-        else 
-        	return "something went wrong";
+        return view('admin::index');
+    }
+     public function login(Request $request)
+    {
+       $user=$request->username;
+       $pass=$request->pass;
+       if($user != '' && $user==config('admin.Admin_username'))
+       {
+       	if($pass != '' && $pass==config('admin.Admin_password'))
+       	{
+       		return view('admin::home',['user'=>$user]);
+       	}
+       	else 
+       		return "Entered password is incorrect";
+       }
+       else 
+       		return "Entered Username is incorrect Or We Think You Are Just A Guest ,SO Not Allowed To Access Admin Account";
     }
 }
 

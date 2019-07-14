@@ -1,6 +1,6 @@
 <?php
 return [
-	'name'=>'gunaseelan1',
-	'permission_level'=>'10'
+	'Admin_username'=>'root',
+	'Admin_password'=>'12345'
 ];
 ?>
