@@ -2,7 +2,7 @@
     "name": "gunaseelan/admin",
     "description": "This is My first Package.iam just trying to create a admin panel package :)",
     "type": "",
-    "license": "Guna",
+    "license": "MIT",
     "authors": [
         {
             "name": "Gunaseelan",
