@@ -1,0 +1,38 @@
+{
+    "name": "gunaseelan/admin",
+    "description": "This is My first Package.iam just trying to create a admin panel package :)",
+    "type": "",
+    "license": "Guna",
+    "authors": [
+        {
+            "name": "Gunaseelan",
+            "email": "gunasmart00@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+       "extra": {
+        "laravel": {
+            "providers": [
+                'Gunaseelan\Admin\AdminServiceProvider'
+            ]
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Gunaseelan\\Admin\\AdminServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "suggest": {
+        "illuminate/database": "The Illuminate Database package (~5.1)."
+    }
+}
+}
