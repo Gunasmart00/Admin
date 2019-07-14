@@ -14,7 +14,7 @@
        "extra": {
         "laravel": {
             "providers": [
-                'Gunaseelan\Admin\AdminServiceProvider'
+                "Gunaseelan\Admin\AdminServiceProvider"
             ]
         }
     },
