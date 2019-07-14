@@ -11,10 +11,13 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-       "extra": {
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
         "laravel": {
             "providers": [
-                'Gunaseelan\Admin\AdminServiceProvider'
+                "Gunaseelan\\Admin\\AdminServiceProvider"
             ]
         }
     },
