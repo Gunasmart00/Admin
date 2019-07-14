@@ -30,7 +30,7 @@ class AdminServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views/','admin');
         $this->mergeConfigFrom(__DIR__.'/config/Adminconfig.php','admin');
         $this->publishes([
-            __DIR__.'/config/Adminconfig.php'=>config_path('Adminconfig.php')
+            __DIR__.'/config/Adminconfig.php'=>config_path('admin.php')
         ]);
     }
 }
