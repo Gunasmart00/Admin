@@ -6,11 +6,26 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 use Gunaseelan\Admin\Models\Admin;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 class AdminController extends Controller
 {
      public function index()
     {
-        return view('admin::index');
+        //return view('admin::index');
+        //$state=Schema::exists('admin');
+        $admin_table=config('admin.Admin_table_name');
+        if(Schema::hasTable($admin_table))
+        {
+        	return $admin_table;
+        }
+        else 
+        	return "The $admin_table Table is Not Exists";
+        // $tables = DB::select('SHOW TABLES');
+
+        // return $tables;
     }
      public function login(Request $request)
     {
